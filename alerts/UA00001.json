@@ -1,0 +1,14 @@
+{
+  "dateRaised": 20200929,
+  "affectedFirmware": ["all"],
+  "hardwareLimited": [],
+  "description": "When using interrupt driven inputs if a hardware failure occurs that generates an extremely high interrupt rate (over 100,000 interrupts per second) the flight controller can become overloaded and cease to function. This affects the following types of inputs: RPM input with RPM_TYPE 1 or 2, Camera feedback with a CAM_FEEDBACK_PIN, Wheel encoders with WENC_TYPE=1, liquid fuel flow monitors with BATT_MONITOR=11 or 12, PWM rangefinder with RFND type 5 or 30, RSSI with RSSI_TYPE=4",
+  "mitigation": "Disable the parameter associated with the interrupt input",
+  "fixCommit": [],
+  "dateResolved": null,
+  "linkedIssue": "https://github.com/ArduPilot/ardupilot/issues/15384",
+  "linkedInfo": [],
+  "linkedPR": "https://github.com/ArduPilot/ardupilot/pull/15388",
+  "versionFrom": {},
+  "versionFixed": {}
+}
