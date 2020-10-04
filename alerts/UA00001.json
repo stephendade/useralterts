@@ -10,5 +10,6 @@
   "linkedInfo": [],
   "linkedPR": "https://github.com/ArduPilot/ardupilot/pull/15388",
   "versionFrom": {},
-  "versionFixed": {}
+  "versionFixed": {},
+  "criticality": 4
 }
