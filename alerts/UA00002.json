@@ -1,15 +1,15 @@
 {
   "dateRaised": 20201028,
   "affectedFirmware": ["all"],
-  "hardwareLimited": [],
-  "description": "When using SBUS output, if the RC receiver is lost the IOMCU will invert the SBUS output momentarily whilst searching for an FPort input. This can lead to a loss of signal on the SBUS output port. This only affects boards with an IOMCU",
-  "mitigation": "Do not use the SBUS output port",
+  "hardwareLimited": ["CUAVv5", "CubeBlack", "CubeBlack+", "CubeGreen-solo", "CubeOrange", "CubePurple", "CubeSolo", "CubeYellow", "DrotekP3Pro", "Durandal", "fmuv2", "fmuv3", "fmuv5", "mRoX21", "mRoX21-777", "Pix32v5", "Pixhawk1", "Pixhawk1-1M", "Pixhawk4"],
+  "description": "When using SBUS output, if the RC receiver is lost the IOMCU will invert the SBUS output momentarily whilst searching for an RC input. This can lead to a loss of signal on the SBUS output port. This only affects boards with an IOMCU that use the default SBUS Output port.",
+  "mitigation": "Do not use the default SBUS OUT port. Use an alternative UART for SBUS Output.",
   "fixCommit": ["5980d3bb21fc3a258f4bde6c98209dec7b82490b", "8e57677c00c4df5f46f9e4def2d8c77a9da8e47b"],
-  "dateResolved": null,
+  "dateResolved": 20201103,
   "linkedIssue": "https://github.com/ArduPilot/ardupilot/issues/15516",
   "linkedInfo": [],
   "linkedPR": "https://github.com/ArduPilot/ardupilot/pull/15523",
   "versionFrom": {"copter": "4.0.4", "plane": "4.0.6"},
-  "versionFixed": {"copter": "4.0.5"},
+  "versionFixed": {"copter": "4.0.5", "plane": "4.0.7"},
   "criticality": 4
 }
