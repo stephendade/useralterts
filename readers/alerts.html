@@ -74,9 +74,9 @@ function selectVeh(sel)
     var table = document.getElementById('alertsTable');
     var content = '';
     for (var key in userAlerts) {
-            for (var i = 0, len = userAlerts[key].affectedFirmware.length; i < len; i++) {
-                //console.log(userAlerts[key].affectedFirmware[i]);
-              if (userAlerts[key].affectedFirmware[i] === "all" || userAlerts[key].affectedFirmware[i] === sel.value) {
+            for (var i = 0, len = userAlerts[key].affectedStableFirmware.length; i < len; i++) {
+                //console.log(userAlerts[key].affectedStableFirmware[i]);
+              if (userAlerts[key].affectedStableFirmware[i] === "all" || userAlerts[key].affectedStableFirmware[i] === sel.value) {
                     content += '<tr id="' + key + '">';
                     content += '<td>' + key + '</td>';
                     content += '<td>' + userAlerts[key].dateRaised + '</td>';

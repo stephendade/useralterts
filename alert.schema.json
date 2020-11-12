@@ -6,7 +6,8 @@
     "default": {},
     "required": [
         "dateRaised",
-        "affectedFirmware",
+        "affectedStableFirmware",
+        "affectedLatestFirmware",
         "hardwareLimited",
         "description",
         "mitigation",
@@ -31,11 +32,27 @@
                 20190210
             ]
         },
-        "affectedFirmware": {
-            "$id": "#/properties/affectedFirmware",
+        "affectedStableFirmware": {
+            "$id": "#/properties/affectedStableFirmware",
             "type": "array",
-            "title": "affectedFirmware",
-            "description": "Which ArduPilot firmware is affected. Use comma separated value to specify multiple vehicles if 'all' does not work.",
+            "title": "affectedStableFirmware",
+            "description": "Which stable ArduPilot firmware is affected. Use comma separated value to specify multiple vehicles if 'all' does not work.",
+            "default": [],
+            "examples": [
+                [
+                    "all"
+                ]
+            ],
+            "additionalItems": false,
+            "items": {
+                "additionalItems": { "type": "string", "enum": ["copter", "sub", "antenna", "plane", "rover", "AP_Periph", "all"]}
+            }
+        },
+        "affectedLatestFirmware": {
+            "$id": "#/properties/affectedLatestFirmware",
+            "type": "array",
+            "title": "affectedLatestFirmware",
+            "description": "Which latest ArduPilot firmware is affected. Use comma separated value to specify multiple vehicles if 'all' does not work.",
             "default": [],
             "examples": [
                 [

@@ -67,7 +67,8 @@ def checkFile(fileAbs):
         print("Bad field: dateRaised")
         assert False
 
-    assert "affectedFirmware" in data and isinstance(data["affectedFirmware"], list) and len(data["affectedFirmware"]) > 0
+    assert "affectedStableFirmware" in data and isinstance(data["affectedStableFirmware"], list) and len(data["affectedStableFirmware"]) > 0
+    assert "affectedLatestFirmware" in data and isinstance(data["affectedLatestFirmware"], list) and len(data["affectedLatestFirmware"]) > 0
     assert "hardwareLimited" in data and isinstance(data["hardwareLimited"], list)
     assert "description" in data and isinstance(data["description"], str)
     assert "mitigation" in data and isinstance(data["mitigation"], str)

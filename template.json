@@ -1,6 +1,7 @@
 {
   "dateRaised": YYYYMMDD,
-  "affectedFirmware": [],
+  "affectedStableFirmware": [],
+  "affectedLatestFirmware": [],
   "hardwareLimited": [],
   "description": "",
   "mitigation": "",
