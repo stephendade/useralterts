@@ -1,6 +1,7 @@
 {
   "dateRaised": 20190624,
-  "affectedFirmware": ["all"],
+  "affectedLatestFirmware": ["all"],
+  "affectedStableFirmware": ["all"],
   "hardwareLimited": [],
   "description": "Another example that is only resolved for plane and copter, other firmwares outstanding",
   "mitigation": "Do something else until a fixed firmware is released",

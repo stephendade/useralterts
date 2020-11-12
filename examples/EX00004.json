@@ -1,6 +1,7 @@
 {
   "dateRaised": 20190624,
-  "affectedFirmware": ["all"],
+  "affectedLatestFirmware": ["all"],
+  "affectedStableFirmware": ["all"],
   "hardwareLimited": [],
   "description": "Interference from an external cable connected to the I2C bus may cause a flood of interrupts on the Flight Controller, locking it up",
   "mitigation": "Do not use I2C devices where possible. Ensure all I2C cables are short in length and not near any RF noise sources",

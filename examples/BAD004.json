@@ -1,6 +1,7 @@
 {
   "dateRaised": "testbad",
-  "affectedFirmware": 2000,
+  "affectedLatestFirmware": 2000,
+  "affectedStableFirmware": ["copter", "plane", "rover"],
   "hardwareLimited": [],
   "description": "If FrSky SPort Passthrough is enabled on a Telemetry port, a race condition may cause an in-air lockup of the Autopilot",
   "mitigation": 20,

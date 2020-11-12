@@ -1,6 +1,7 @@
 {
   "dateRaised": 20190210,
-  "affectedFirmware": ["all"],
+  "affectedLatestFirmware": ["all"],
+  "affectedStableFirmware": ["all"],
   "hardwareLimited": ["Pixhawk1-1M"],
   "description": "This is an example issue that only affects the Pixhawk1-1M boards",
   "mitigation": "Do something",

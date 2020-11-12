@@ -1,6 +1,7 @@
 {
   "dateRaised": 20190101,
-  "affectedFirmware": ["plane"],
+  "affectedLatestFirmware": ["plane"],
+  "affectedStableFirmware": ["copter", "plane", "rover"],
   "hardwareLimited": [],
   "description": "This is an example open issue for Plane only, V3.9.5 and above",
   "mitigation": "Put the temporary mitigation here",

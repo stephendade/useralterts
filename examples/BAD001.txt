@@ -1,6 +1,7 @@
 {
   "dateRaised": 20200110,
-  "affectedFirmware": ["all"],
+  "affectedStableFirmware": ["all"],
+  "affectedLatestFirmware": ["all"],
   "hardwareLimited": [],
   "description": "If FrSky SPort Passthrough is enabled on a Telemetry port, a race condition may cause an in-air lockup of the Autopilot",
   "mitigation": "Disable FrSky SPort Passthrough by setting the SERIALx_PROTOCOL parameters to anything but 10.",
