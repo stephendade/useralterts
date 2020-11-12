@@ -51,7 +51,7 @@ See ArduPilot Wiki (https://ardupilot.org/dev/docs/user-alerts-developer.html)
 
 Simply querying the site (see below for URL's) will return a json array or javascript variable of all user alerts.
 These can then be filtered by the ``versionFrom``, ``versionFixed``,
-``affectedFirmware`` and ``hardwareLimited`` fields to match with the
+``affectedStableFirmware`` and ``hardwareLimited`` fields to match with the
 user's autopilot and display any relevant user alerts.
 
 There are URL's for both an *example* manifest (for testing purposes) and the
