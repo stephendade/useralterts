@@ -1,7 +1,6 @@
 {
   "dateRaised": 20201028,
-  "affectedLatestFirmware": ["all"],
-  "affectedStableFirmware": ["copter", "plane"],
+  "affectedFirmware": ["copter", "plane"],
   "hardwareLimited": ["CUAVv5", "CubeBlack", "CubeBlack+", "CubeGreen-solo", "CubeOrange", "CubePurple", "CubeSolo", "CubeYellow", "DrotekP3Pro", "Durandal", "fmuv2", "fmuv3", "fmuv5", "mRoX21", "mRoX21-777", "Pix32v5", "Pixhawk1", "Pixhawk1-1M", "Pixhawk4"],
   "description": "When using SBUS output, if the RC receiver is lost the IOMCU will invert the SBUS output momentarily whilst searching for an RC input. This can lead to a loss of signal on the SBUS output port. This only affects boards with an IOMCU that use the default SBUS Output port.",
   "mitigation": "Upgrade to ArduCopter 4.0.5 (or later) or ArduPlane 4.0.7 (or later). If unable to upgrade, use an alternative UART Port for SBUS Output instead of the default SBUS OUT port.",
